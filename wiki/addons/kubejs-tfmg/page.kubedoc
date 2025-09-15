@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
 <|
 
 # Coking
-Syntax: `coking(itemIngredient, [itemOutput | fluidOutput], processingTime)`
+Syntax: `coking(itemIngredient, (itemOutput | fluidOutput)[], processingTime)`
 
 Information:
 - Only supports **one** item ingredient
@@ -154,7 +154,7 @@ ServerEvents.recipes(event => {
 # Chemical Vat
 Syntax:
 ```js
-vat_machine_recipe([itemIngredient | fluidIngredient], [itemOutput | fluidOutput], machines[]?, vatTypes[]?, minSize?, processingTime?, heatRequirement?)
+vat_machine_recipe((itemIngredient | fluidIngredient)[], (itemOutput | fluidOutput)[], machines[]?, vatTypes[]?, minSize?, processingTime?, heatRequirement?)
 ```
 
 >>> success
